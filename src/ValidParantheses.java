@@ -8,7 +8,7 @@ public class ValidParantheses {
         while (true){
             if (str.contains("{}")){
                 str = str.replace("{}","");
-            } else if (str.contains("()")) {
+            } else if (str.contains("()")) { // target and now
                 str = str.replace("()","");
 
             }else if (str.contains("[]")){

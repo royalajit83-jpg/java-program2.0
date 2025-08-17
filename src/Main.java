@@ -6,7 +6,6 @@ public class Main {
             System.out.print(i + " ");
         }
 
-
     }
 
     public static int[] bubbleSort(int[] arr){

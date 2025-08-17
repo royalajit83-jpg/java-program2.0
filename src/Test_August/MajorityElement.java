@@ -2,7 +2,7 @@ package Test_August;
 
 public class MajorityElement {
     public static int majorityElement(int[] nums) {
-        int count = 0, candidate = 0;
+        int count = 0 , candidate = 0;
 
         for (int num : nums) {
             if (count == 0) {
@@ -10,6 +10,8 @@ public class MajorityElement {
             }
             count += (num == candidate) ? 1 : -1;
         }
+
+
         return candidate;
     }
 

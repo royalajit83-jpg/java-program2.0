@@ -6,17 +6,20 @@ public class ForNow {
             System.out.print(i+" ");
         }
     }
+
     public static int[] moveZero(int[] arr){
-        int count = 0;
+        int count = 0; // index to place non-zero elements
+
+        // Step 1: Copy non-zero elements forward
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]==0){
+            if (arr[i] != 0) {
                 arr[count++] = arr[i];
             }
-
         }
-        for (int i = count; i < count; i++) {
-            arr[count++] = 0;
 
+        // Step 2: Fill remaining places with zeros
+        while (count < arr.length) {
+            arr[count++] = 0;
         }
 
         return arr;

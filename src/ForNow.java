@@ -22,8 +22,6 @@ public class ForNow {
             arr[count++] = 0;
         }
 
-
-        // returning arr
         return arr;
     }
 }
